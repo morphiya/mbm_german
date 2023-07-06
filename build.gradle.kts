@@ -21,6 +21,7 @@ repositories {
 
 object Versions {
 	const val kLogger = "4.+"
+	const val hibernate = "6.1.4.Final"
 }
 
 dependencies {
@@ -45,6 +46,8 @@ dependencies {
 	// db
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	runtimeOnly("com.mysql:mysql-connector-j")
+	implementation ("javax.persistence:javax.persistence-api:2.2")
+	implementation ("org.hibernate:hibernate-core:${Versions.hibernate}")
 
 	// optional
 	implementation("org.springframework.boot:spring-boot-starter-mustache")

@@ -1,3 +1,24 @@
 ### hello world test
 GET localhost:8012/test/hello
 Content-Type: application/json
+
+### saving test
+POST localhost:8012/test/create
+Content-Type: application/json
+
+{
+  "name" : "name"
+}
+
+### test saving word
+POST localhost:8012/test/save-word
+Content-Type: application/json
+
+{
+  "article": "das",
+  "word" : "Essen",
+  "plural": "die Essen",
+  "translation": "еда",
+  "partOfSpeech": "noun"
+}
+

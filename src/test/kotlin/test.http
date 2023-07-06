@@ -1,0 +1,3 @@
+### hello world test
+GET localhost:8012/test/hello
+Content-Type: application/json

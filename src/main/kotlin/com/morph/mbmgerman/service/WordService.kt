@@ -7,4 +7,5 @@ import org.springframework.stereotype.Service
 @Service
 class WordService(private val repository: WordRepository) {
     fun save(word: Word): Word = repository.save(word)
+    fun getAll(): List<Word> = repository.findAll()
 }

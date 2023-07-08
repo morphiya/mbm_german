@@ -7,4 +7,5 @@ import org.springframework.stereotype.Service
 @Service
 class TestService(private val repository: TestRepository) {
     fun create(test: Test): Test = repository.save(test)
+    fun getAll(): List<Test> = repository.findAll()
 }
